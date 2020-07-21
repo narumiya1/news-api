@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         if (keyword.length() > 0 ){
             call = apiInterface.getNewsSearch(keyword, language, "publishedAt", API_KEY);
         } else {
-            call = apiInterface.getNews("de", API_KEY);
+            call = apiInterface.getNews("id", API_KEY);
         }
         call.enqueue(new Callback<News>() {
             @Override

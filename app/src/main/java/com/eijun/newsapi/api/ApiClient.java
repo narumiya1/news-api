@@ -28,7 +28,6 @@ public class ApiClient {
         return retrofit ;
     }
 
-
     public static OkHttpClient.Builder getUnsafeOkHttpClient(){
         try {
             // Create a trust manager that does not validate certificate chains

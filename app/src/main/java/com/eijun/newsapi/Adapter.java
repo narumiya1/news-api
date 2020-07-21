@@ -30,6 +30,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
 
     private List<Article> articles ;
     private Context context ;
+
     private OnItemClickListener onItemClickListener;
 
 
@@ -82,7 +83,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         holder.published_at.setText(Utils.DateFormat(model.getPublishedAt()));
         holder.author.setText(model.getAuthor());
 //        holder.imageView.setImageURI(Uri.parse(model.getUrlToImage()));
-
 
     }
 
